@@ -1,0 +1,80 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Very dark background */
+    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
+}
+
+a {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #1f1f1f; /* Dark grey nav background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+nav a.active {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.25rem;
+}
+
+/* Page container */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Headers */
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+}
